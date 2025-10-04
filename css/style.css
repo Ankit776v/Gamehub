@@ -1,0 +1,410 @@
+/* ==========================
+   FONT IMPORTS
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@400..900&display=swap');
+
+@font-face {
+    font-family: 'Knights';
+    src: url('../fonts/KnightWarrior-w16n8.otf') format('opentype');
+}
+@font-face {
+    font-family: 'DragonHunter';
+    src: url('../fonts/DragonHunter-9Ynxj.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ViceCityScript';
+    src: url('../fonts/BrushScriptMT.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'Inferno';
+    src: url('../fonts/InfernoRacers-rvldK.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ascharge';
+    src: url('../fonts/Ascharge-j9ml7.otf') format('opentype');
+}
+storytell-text-selection{
+    display: none;
+}
+/* ==========================
+   RESET + BASE
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: url('../img/bg-2.jpg') no-repeat center/cover;
+    width: 100%;
+    color: #fff;
+}
+.background {
+    background: url('../img/bg.jpg') no-repeat center/cover;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+.navbar {
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+.navbar * {
+    list-style: none;
+    font-family: 'ViceCityScript', cursive;
+}
+.nav-list {
+    font-weight: bold;
+    font-size: 2rem;
+    list-style: none;
+    display: flex;
+    width: 60%;
+    text-shadow: 2px 2px 4px #000;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.navbar img {
+    height: 10vh;
+    border-radius: 6px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+.nav-list li a:hover {
+    color: greenyellow;
+    text-shadow: 1vh 1vh 2vh #fff;
+}
+
+/* Search & Button */
+.rightNav {
+    display: flex;
+    align-items: center;
+}
+#search {
+    font-size: 1rem;
+    margin-right: .5vw;
+    padding: .5vh 1vw;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+.rightNav .btn {
+    font-size: 1rem;
+    padding: .5vh 1vw;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Hamburger for mobile */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ==========================
+   HERO / MAIN SECTIONS
+========================== */
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.firstSection,
+.secLeft,
+.secRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
+    padding: 5vh 0;
+    text-shadow: 2px 2px 4px #000;
+}
+.firstSection {
+    height: 80vh;
+    width: 80%;
+}
+.firstHalf,
+.paras {
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondHalf,
+.thumbnail {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondHalf img,
+.thumbnail img {
+    max-width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+.btn {
+    padding: 1vh 1.5vw;
+    border: none;
+    border-radius: 6px;
+    background: greenyellow;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover {
+    background: blue;
+    color: #fff;
+}
+
+/* ==========================
+   TEXT STYLES
+========================== */
+.text-big {
+    font-size: 2.5rem;
+    font-family: "Press Start 2P", system-ui;
+}
+.text-small {
+    font-size: 1.3rem;
+    padding: 20px 0;
+    font-family: "Pacifico", cursive;
+}
+.secTag {
+    font-family: 'DragonHunter';
+}
+.secSubTag {
+    font-family: 'Inferno';
+}
+.secLeft {
+    flex-direction: row-reverse;
+}
+
+/* ==========================
+   EFFECTS
+========================== */
+.lightning {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.main-img {
+    position: relative;
+    z-index: 2;
+}
+.effect {
+    position: relative;
+    width: fit-content;
+}
+
+/* ==========================
+   CONTACT FORM
+========================== */
+.contact {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+}
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.details input,
+.details textarea {
+    margin: 1vh 0;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    border: .1vh solid white;
+    padding: 1vh 1vw;
+    border-radius: .5vh;
+    color: white;
+}
+.text::placeholder {
+    color: white;
+}
+.details button {
+    background-color: greenyellow;
+    font-size: 1rem;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+.footer {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: .8;
+    margin-top: 2vh;
+    padding: 1vh;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.footerText {
+    font-family: 'ViceCityScript', cursive;
+    font-size: 1.5rem;
+}
+.footerImg {
+    height: 8vh;
+    margin-right: 2vw;
+}
+
+/* ==========================
+   RESPONSIVENESS
+========================== */
+
+/* Large Tablets (≤1200px) */
+@media (max-width: 1200px) {
+    .firstSection, .secLeft, .secRight {
+        max-width: 95%;
+        padding: 3vh 0;
+    }
+    .nav-list {
+        font-size: 1.8rem;
+        width: 70%;
+    }
+    .text-big {
+        font-size: 2rem;
+    }
+    .text-small {
+        font-size: 1rem;
+    }
+}
+
+/* Tablets (≤900px) */
+@media (max-width: 900px) {
+    .navbar {
+        height: auto;
+        padding: 2vh 2vw;
+    }
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0,0,0,0.9);
+        padding: 2vh;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+    }
+    }
+    .firstSection {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+    }
+    .firstHalf, .secondHalf, .paras, .thumbnail {
+        width: 100%;
+    }
+    .secondHalf img, .thumbnail img {
+        max-width: 70%;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 2vh;
+        align-items: center;
+    }
+    .contact {
+        width: 80%;
+    }
+
+
+/* Mobile (≤600px) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        padding: 1vh 1vw;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0,0,0,0.9);
+        padding: 2vh;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+    }
+    .nav-list.active {
+        display: flex;
+    }
+    .firstSection, .secLeft, .secRight {
+        padding: 2vh 0;
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .text-big {
+        font-size: 1.5rem;
+    }
+    .text-small {
+        font-size: 1rem;
+    }
+    .secondHalf img, .thumbnail img {
+        max-width: 90%;
+    }
+    .contact {
+        width: 95%;
+    }
+    .details input, .details textarea {
+        font-size: 16px; /* readable on touch devices */
+    }
+    .footerText {
+        font-size: 1rem;
+    }
+    .footerImg {
+        height: 5vh;
+        margin-right: 1vw;
+    }
+    .box-main, .secRight{
+        flex-direction: column-reverse;
+    }
+    .secLeft{
+        flex-direction: column;
+    }
+}
