@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameshub - a portal for games history</title>
+</head>
+
+<body>
+    <div class="background">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><img src="./img/logo.jpg" alt="Logo"></a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"><i class="fa-solid fa-bars"></i></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="industries.html">Industries</a></li>
+                <li><a href="#" onclick="join()">Contact</a></li>
+            </ul>
+            <div class="rightNav">
+                <input type="text" name="search" id="search" placeholder="Enter game title here">
+                <button class="btn btn-sm">Search</button>
+            </div>
+        </nav>
+        <section class="firstSection">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <p class="text-big">A portal for games history</p>
+                    <p class="text-small">This is a website that provides information about the history of video games, including their development, evolution, and impact on popular culture. The site features articles, reviews, and interviews with industry experts, as well as a comprehensive database of games from different eras and platforms.</p>
+                    <div class="buttons">
+                        <button class="btn btn-lg" onclick="join()">Join Us</button>
+                        <button class="btn btn-lg" onclick="channel()">Gaming channel</button>
+                    </div>
+                </div>
+                <div class="secondHalf">
+                    <img src="./img/img1.png" alt="home image">
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="secLeft">
+        <div class="paras">
+            <p class="secTag text-big">Your games search end here</p>
+            <p class="secSubTag text-small">Welcome to your new favorite corner of the internet — where games aren’t
+                just a hobby, they’re a way of life. Whether you’ve been gaming since the 8-bit days or just picked up
+                your first controller, you’re in good company. Here, we talk all things games: the legends, the hidden
+                gems, the epic storylines, and the moments that made us throw our controllers (in rage or joy).
+        </div>
+        <div class="thumbnail">
+            <img src="./img/img2.png" alt="img-3" class="imgFluid">
+        </div>
+    </section>
+    <hr>
+    <section class="secRight">
+        <div class="paras">
+            <p class="secTag text-big">Dive into character's journey</p>
+            <p class="secSubTag text-small"> Dive into character backstories, explore game worlds, share your favorite
+                titles, or just hang out and vibe with other gamers who get it. No pressure, no try-hard energy — just
+                pure love for games. It’s a journey from your very first game to the ones still waiting on your wishlist
+                — from the classic Snake Xenzia on mobile to PUBG, from Super Mario and Contra to GTA VI, from God Hand
+                to Marvel’s Spider-Man 2. No matter what you play or how you play it, you're home here.</p>
+        </div>
+        <div class="thumbnail">
+            <div class="effect">
+                <img src="./img/lighning.png" alt="img-2" class="imgFluid lightning">
+                <img src="./img/img3.png" alt="img-2" class="imgFluid main-img">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="../Resp-site/index.html" class="details" method="POST">
+            <input type="text" class="text" id="name" name="name" placeholder="Enter your name" required>
+            <input type="tel" id="phone" name="phone" class="text" placeholder="Enter your mobile no." required>
+
+            <input type="email" id="email" class="text" name="email" placeholder="Enter your email address" required>
+
+
+            <input type="text" id="ign" name="ign" class="text" placeholder="Enter your IGN" required>
+
+            <textarea id="games" name="games" rows="4" class="text" placeholder="Name of Games you play"
+                required></textarea>
+
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <img src="./img/logo.jpg" alt="Logo" class="footerImg">
+        <p class="footerText">Copyright Gameshub &copy; 2025 Gaming. All rights reserved.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/1ea92ee36c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
